@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PowerGuard | Electricity Early Warning</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">⚡ PowerGuard</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#analyze">Analyze</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HOME SECTION -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-text">
+
+                <p class="tag">SMART ELECTRICITY MONITORING</p>
+
+                <h1>
+                    Detect unusual
+                    <span>power usage</span>
+                    before it becomes costly.
+                </h1>
+
+                <p>
+                    PowerGuard analyzes your electricity consumption
+                    and provides an early warning when unusual usage
+                    is detected.
+                </p>
+
+                <a href="#analyze" class="start-button">
+                    Start Analysis →
+                </a>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="card-title">
+                    ⚡ Power Status
+                </div>
+
+                <div class="status-circle">
+                    ✓
+                </div>
+
+                <h3>Consumption Normal</h3>
+
+                <p>Average usage: 8 units/day</p>
+
+                <div class="mini-bar">
+                    <div></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANALYSIS SECTION -->
+
+        <section id="analyze" class="analysis">
+
+            <p class="section-tag">CONSUMPTION ANALYSIS</p>
+
+            <h2>Check Your Electricity Usage</h2>
+
+            <p class="section-description">
+                Enter your previous and current electricity meter readings.
+            </p>
+
+
+            <div class="input-card">
+
+                <div class="input-group">
+
+                    <label for="previousReading">
+                        Previous Meter Reading
+                    </label>
+
+                    <input
+                        type="number"
+                        id="previousReading"
+                        placeholder="Example: 1248"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="currentReading">
+                        Current Meter Reading
+                    </label>
+
+                    <input
+                        type="number"
+                        id="currentReading"
+                        placeholder="Example: 1280"
+                    >
+
+                </div>
+
+
+                <button onclick="calculateUsage()">
+                    Analyze Usage
+                </button>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div id="result" class="result-card">
+
+                <div class="result-icon">
+                    ⚡
+                </div>
+
+                <div>
+
+                    <h3>Ready to Analyze</h3>
+
+                    <p>
+                        Enter your meter readings above to check
+                        today's electricity consumption.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+
+        <section id="about" class="about">
+
+            <p class="section-tag">ABOUT POWERGUARD</p>
+
+            <h2>Why PowerGuard?</h2>
+
+            <div class="features">
+
+                <div class="feature-card">
+                    <div>📊</div>
+                    <h3>Analyze</h3>
+                    <p>
+                        Understand your daily electricity consumption.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div>🚨</div>
+                    <h3>Detect</h3>
+                    <p>
+                        Identify unusual consumption patterns.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div>💰</div>
+                    <h3>Predict</h3>
+                    <p>
+                        Estimate future electricity expenses.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            ⚡ PowerGuard — Electricity Consumption Early Warning System
+        </p>
+
+        <p>
+            Thinkathon Prototype 2026
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
